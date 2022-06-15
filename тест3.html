@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="тест.css">
+    <link rel="stylesheet" href="js.js">
+    <title>Изучение языка жестов</title>
+</head>
+<body>
+    <div class="layer">
+        <div class="bberx">
+            Изучение языка жестов
+        </div>
+        <div class="qq">
+            <a href="главная.html">Главная</a><a href="тест.html">/Тест</a>
+
+
+<form name="myform">
+    <video src="img/тест3/Во сколько лет вы оглохли.mp4"  controls="controls" loop></video><br>
+    <input type="radio" name="w1" value="a"><span>Сколько сейчас времени?</span><br>
+    <input type="radio" name="w1" value="b"><span>Во сколько лет вы оглохли?</span><br>
+    <input type="radio" name="w1" value="c"><span>Какая сегодня погода?</span>
+    <hr>
+
+    <video src="img/тест3/Зачем ты так говоришь.mp4" controls="controls" loop></video><br>
+    <input type="radio" name="w2" value="a"><span>Зачем ты так говоришь</span><br>
+    <input type="radio" name="w2" value="b"><span>Зачем столько?</span><br>
+    <input type="radio" name="w2" value="c"><span>Повторите, пожалуйста</span>
+    <hr>
+
+    <video src="img/тест3/имя.mp4" controls="controls" loop></video><br>
+    <input type="radio" name="w3" value="a"><span>Что</span><br>
+    <input type="radio" name="w3" value="b"><span>Где?</span><br>
+    <input type="radio" name="w3" value="c"><span>Имя</span>
+    <hr>
+
+    <video src="img/тест3/Пожалуйста, помогите мне.mp4" controls="controls" loop></video><br>
+    <input type="radio" name="w4" value="a"><span>Я устал(а)</span><br>
+    <input type="radio" name="w4" value="b"><span>Пожалуйста, помогите мне</span><br>
+    <input type="radio" name="w4" value="c"><span>Как называетсяэта улица?</span>
+    <hr>
+
+    <video src="img/тест3/Рад(-а) повидать вас..mp4" controls="controls" loop></video><br>
+    <input type="radio" name="w5" value="a"><span>Рад(-а) познакомиться с вами</span><br>
+    <input type="radio" name="w5" value="b"><span>Как называется эта улица?</span><br>
+    <input type="radio" name="w5" value="c"><span>Рад(-а) повидать вас..</span>
+    <hr>
+
+    <video src="img/тест3/Ты поел.mp4" controls="controls" loop></video><br>
+    <input type="radio" name="w6" value="a"><span>Ты видел время?</span><br>
+    <input type="radio" name="w6" value="b"><span>Ты поел?</span><br>
+    <input type="radio" name="w6" value="c"><span>Ты где?</span>
+    <hr>
+
+    <video src="img/тест3/Ты устал.mp4" controls="controls" loop></video><br>
+    <input type="radio" name="w7" value="a"><span>Беспокойство</span><br>
+    <input type="radio" name="w7" value="b"><span>Ты устал</span><br>
+    <input type="radio" name="w7" value="c"><span>Куда ты идешь?</span>
+    <hr>
+
+    <video src="img/тест3/Чем вы занимаетесь.mp4" controls="controls" loop></video><br>
+    <input type="radio" name="w8" value="a"><span>Чем вы занимаетесь?</span><br>
+    <input type="radio" name="w8" value="b"><span>Зачем?</span><br>
+    <input type="radio" name="w8" value="c"><span>Ты устал?</span>
+    <hr>
+    
+    <video src="img/тест3/Я выпускник.mp4" controls="controls" loop></video><br>
+    <input type="radio" name="w9" value="a"><span>Сколько?</span><br>
+    <input type="radio" name="w9" value="b"><span>Зачем ты это сделал?</span><br>
+    <input type="radio" name="w9" value="c"><span>Я выпускник</span>
+    <hr>
+    
+    <video src="img/тест3/Я студент.mp4" controls="controls" loop></video><br>
+    <input type="radio" name="w10" value="a"><span>Я устал</span><br>
+    <input type="radio" name="w10" value="b"><span>Я пришёл</span><br>
+    <input type="radio" name="w10" value="c"><span>Я студент</span>
+    <hr><br>
+
+    <input type="button" value="Проверить" onclick="check()">
+</form>
+
+<script>
+    function check(){
+        var w1=document.myform.w1.value;
+        var w2=document.myform.w2.value;
+        var w3=document.myform.w3.value;
+        var w4=document.myform.w4.value;
+        var w5=document.myform.w5.value;
+        var w6=document.myform.w6.value;
+        var w7=document.myform.w7.value;
+        var w8=document.myform.w8.value;
+        var w9=document.myform.w9.value;
+        var w10=document.myform.w10.value;
+        var count=0;
+        if(w1 == "b"){
+            count ++;
+        }
+        if(w2 == "a"){
+            count ++;
+        }
+        if(w3 == "c"){
+            count ++;
+        }
+        if(w4 == "b"){
+            count ++;
+        }
+        if(w5 == "c"){
+            count ++;
+        }
+        if(w6 == "b"){
+            count ++;
+        }
+        if(w7 == "b"){
+            count ++;
+        }
+        if(w8 == "a"){
+            count ++;
+        }
+        if(w9 == "c"){
+            count ++;
+        }
+        if(w10 == "b"){
+            count ++;
+        }
+        if(count == "10"){
+            
+            document.write("Поздравляю, вы прошли тест:"+count+"");
+        }
+        else{
+            document.write("Есть над чем работать:"+count+"");
+        }
+    }
+</script>
+
+            
+
+
+
+        </div>
+        
+</body>
+</html>

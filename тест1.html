@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="тест.css">
+    <link rel="stylesheet" href="js.js">
+    <title>Изучение языка жестов</title>
+</head>
+<body>
+    <div class="layer">
+        <div class="bberx">
+            Изучение языка жестов
+        </div>
+        <div class="qq">
+            <a href="главная.html">Главная</a><a href="тест.html">/Тест</a>
+
+
+<form name="myform">
+    <img src="img/тест1/г.png" alt="а"><br>
+    <input type="radio" name="w1" value="a"><span>A</span><br>
+    <input type="radio" name="w1" value="b"><span>Г</span><br>
+    <input type="radio" name="w1" value="c"><span>E</span>
+    <hr>
+
+    <img src="img/тест1/д.png" alt="и"><br>
+    <input type="radio" name="w2" value="a"><span>Д</span><br>
+    <input type="radio" name="w2" value="b"><span>B</span><br>
+    <input type="radio" name="w2" value="c"><span>E</span>
+    <hr>
+
+    <img src="img/тест1/н.png" alt="а"><br>
+    <input type="radio" name="w3" value="a"><span>Ч</span><br>
+    <input type="radio" name="w3" value="b"><span>Г</span><br>
+    <input type="radio" name="w3" value="c"><span>Н</span>
+    <hr>
+
+    <img src="img/тест1/п.png" alt="а"><br>
+    <input type="radio" name="w4" value="a"><span>Я</span><br>
+    <input type="radio" name="w4" value="b"><span>П</span><br>
+    <input type="radio" name="w4" value="c"><span>К</span>
+    <hr>
+
+    <img src="img/тест1/р.png"><br>
+    <input type="radio" name="w5" value="a"><span>У</span><br>
+    <input type="radio" name="w5" value="b"><span>Л</span><br>
+    <input type="radio" name="w5" value="c"><span>Р</span>
+    <hr>
+
+    <img src="img/тест1/т.png"><br>
+    <input type="radio" name="w6" value="a"><span>Х</span><br>
+    <input type="radio" name="w6" value="b"><span>Т</span><br>
+    <input type="radio" name="w6" value="c"><span>А</span>
+    <hr>
+
+    <img src="img/тест1/у.png" alt="а"><br>
+    <input type="radio" name="w7" value="a"><span>Б</span><br>
+    <input type="radio" name="w7" value="b"><span>У</span><br>
+    <input type="radio" name="w7" value="c"><span>К</span>
+    <hr>
+
+    <img src="img/тест1/ф.png" alt="а"><br>
+    <input type="radio" name="w8" value="a"><span>Ф</span><br>
+    <input type="radio" name="w8" value="b"><span>З</span><br>
+    <input type="radio" name="w8" value="c"><span>Т</span>
+    <hr>
+    
+    <img src="img/тест1/ч.png" alt="а"><br>
+    <input type="radio" name="w9" value="a"><span>С</span><br>
+    <input type="radio" name="w9" value="b"><span>З</span><br>
+    <input type="radio" name="w9" value="c"><span>Ч</span>
+    <hr>
+    
+    <img src="img/тест1/э.png"><br>
+    <input type="radio" name="w10" value="a"><span>К</span><br>
+    <input type="radio" name="w10" value="b"><span>Э</span><br>
+    <input type="radio" name="w10" value="c"><span>Ю</span>
+    <hr><br>
+
+    <input type="button" value="Проверить" onclick="check()">
+</form>
+
+<script>
+    function check(){
+        var w1=document.myform.w1.value;
+        var w2=document.myform.w2.value;
+        var w3=document.myform.w3.value;
+        var w4=document.myform.w4.value;
+        var w5=document.myform.w5.value;
+        var w6=document.myform.w6.value;
+        var w7=document.myform.w7.value;
+        var w8=document.myform.w8.value;
+        var w9=document.myform.w9.value;
+        var w10=document.myform.w10.value;
+        var count=0;
+        if(w1 == "b"){
+            count ++;
+        }
+        if(w2 == "a"){
+            count ++;
+        }
+        if(w3 == "c"){
+            count ++;
+        }
+        if(w4 == "b"){
+            count ++;
+        }
+        if(w5 == "c"){
+            count ++;
+        }
+        if(w6 == "b"){
+            count ++;
+        }
+        if(w7 == "b"){
+            count ++;
+        }
+        if(w8 == "a"){
+            count ++;
+        }
+        if(w9 == "c"){
+            count ++;
+        }
+        if(w10 == "b"){
+            count ++;
+        }
+        if(count == "10"){
+            
+            document.write("Поздравляю, вы прошли тест:"+count+"");
+        }
+        else{
+            document.write("Есть над чем работать:"+count+"");
+        }
+    }
+</script>
+
+            
+
+
+
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="главная.css">
+    <link rel="stylesheet" href="js.js">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Изучение языка жестов</title>
+</head>
+<body>
+    <div class="layer">
+        <div class="bberx">
+            Изучение языка жестов
+        </div>
+        <div class="qq">
+            <a href="главная.html">Главная</a><a href="слова.html">/Базовые слова и выражения</a>
+        </div>
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Поиск..." title="Type in a category">
+
+<ul id="myMenu">
+    <li>
+      <a class="content_toggle" href="#">Привет</a>
+      <div class="content_block" style="display: none;">
+        <video src="video/привет.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+    <li>
+      <a class="q" href="#">Как?</a>
+      <div class="qq" style="display: none;">
+        <video src="video/как.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+    <li>
+      <a class="q1" href="#">Как дела?</a>
+      <div class="qq1" style="display: none;">
+        <video src="video/как дела.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q2" href="#">Как называется эта улица?</a>
+      <div class="qq2" style="display: none;">
+        <video src="video/Как называется эта улица.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q3" href="#">Я устал(-а)</a>
+      <div class="qq3" style="display: none;">
+        <video src="video/Я устал(-а).mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q4" href="#">Рад(-а) повидать вас</a>
+      <div class="qq4" style="display: none;">
+        <video src="video/Рад(-а) повидать вас..mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q5" href="#">Рад (-а) познакомиться с вами</a>
+      <div class="qq5" style="display: none;">
+        <video src="video/Рад (-а) познакомиться с вами.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q6" href="#">Давно не видел(а) тебя</a>
+      <div class="qq6" style="display: none;">
+        <video src="video/Давно не видел(а) тебя.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q7" href="#">Имя</a>
+      <div class="qq7" style="display: none;">
+        <video src="video/имя.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q8" href="#">Беспокойство</a>
+      <div class="qq8" style="display: none;">
+        <video src="video/беспокойство.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q9" href="#">Страна</a>
+      <div class="qq9" style="display: none;">
+        <video src="video/страна.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q10" href="#">Я учу жестовый язык</a>
+      <div class="qq10" style="display: none;">
+        <video src="video/Я учу жестовый язык.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q11" href="#">Я младший</a>
+      <div class="qq11" style="display: none;">
+        <video src="video/109375.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q12" href="#">Я извиняюсь</a>
+      <div class="qq12" style="display: none;">
+        <video src="video/я извиняюсь.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q13" href="#">Я выпускник</a>
+      <div class="qq13" style="display: none;">
+        <video src="video/Я выпускник.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q14" href="#">Я второкурсник</a>
+      <div class="qq14" style="display: none;">
+        <video src="video/Я второкурсник.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q15" href="#">Я художник</a>
+      <div class="qq15" style="display: none;">
+        <video src="video/Я художник.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q16" href="#">Я студент</a>
+      <div class="qq16" style="display: none;">
+        <video src="video/Я студент.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q17" href="#">Я боюсь</a>
+      <div class="qq17" style="display: none;">
+        <video src="video/я боюсь.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q18" href="#">Я понимаю</a>
+      <div class="qq18" style="display: none;">
+        <video src="video/Я понимаю.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q19" href="#">Я счастлив(а)</a>
+      <div class="qq19" style="display: none;">
+        <video src="video/Я счастлив(а).mp4"></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q20" href="#">Кто?</a>
+      <div class="qq20" style="display: none;">
+        <video src="video/Кто.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q21" href="#">Кто ты?</a>
+      <div class="qq21" style="display: none;">
+        <video src="video/Кто ты.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q22" href="#">Ты поел?</a>
+      <div class="qq22" style="display: none;">
+        <video src="video/Ты поел.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q23" href="#">Ты устал?</a>
+      <div class="qq23" style="display: none;">
+        <video src="video/Ты устал.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q24" href="#">Ты хорошо выглядишь</a>
+      <div class="qq24" style="display: none;">
+        <video src="video/ты хорошо выглядишь.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q25" href="#">Ты мне не нравишься</a>
+      <div class="qq25" style="display: none;">
+        <video src="video/ты мне не нравишься.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q26" href="#">Чем вы занимаетесь?</a>
+      <div class="qq26" style="display: none;">
+        <video src="video/Чем вы занимаетесь.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q27" href="#">Где вы живете?</a>
+      <div class="qq27" style="display: none;">
+        <video src="video/Где вы живете.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q28" href="#">Куда?</a>
+      <div class="qq28" style="display: none;">
+        <video src="video/Куда.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q29" href="#">Куда ты идешь?</a>
+      <div class="qq29" style="display: none;">
+        <video src="video/Куда ты идешь.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q30" href="#">Почему?</a>
+      <div class="qq30" style="display: none;">
+        <video src="video/Почему.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q31" href="#">Почему вы заинтересовались жестами?</a>
+      <div class="qq31" style="display: none;">
+        <video src="video/Почему вы.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q31" href="#">Почему вы хотите учить жестовый язык?</a>
+      <div class="qq31" style="display: none;">
+        <video src="video/Почему вы хотите учить жестовый язык.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q32" href="#">Зачем ты это сделал?</a>
+      <div class="qq32" style="display: none;">
+        <video src="video/зачем ты это сделал.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q33" href="#">Зачем ты так говоришь?</a>
+      <div class="qq33" style="display: none;">
+        <video src="video/Зачем ты так говоришь.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q34" href="#">Сколько?</a>
+      <div class="qq34" style="display: none;">
+        <video src="video/Сколько.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q35" href="#">Сколько это стоит?</a>
+      <div class="qq35" style="display: none;">
+        <video src="video/сколько это стоит.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q36" href="#">Во сколько лет вы оглохли?</a>
+      <div class="qq36" style="display: none;">
+        <video src="video/Во сколько лет вы оглохли.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q37" href="#">Мне плохо</a>
+      <div class="qq37" style="display: none;">
+        <video src="video/Мне плохо.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q38" href="#">Пожалуйста, помогите мне</a>
+      <div class="qq38" style="display: none;">
+        <video src="video/Пожалуйста, помогите мне.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q39" href="#">Спасибо</a>
+      <div class="qq39" style="display: none;">
+        <video src="video/Спасибо.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+    <li>
+      <a class="q40" href="#">Нет, спасибо</a>
+      <div class="qq40" style="display: none;">
+        <video src="video/Нет, спасибо.mp4" controls="controls" loop></video>
+      </div>
+    </li>
+
+
+
+</ul>
+    </div>
+
+    <script>
+        function myFunction() {
+          // Объявить переменные
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myMenu");
+          li = ul.getElementsByTagName("li");
+        
+          // Перебирайте все элементы списка и скрывайте те, которые не соответствуют поисковому запросу
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+
+        <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $('.content_toggle').click(function(){
+            $('.content_block').slideToggle(300);      
+            return false;
+          });
+        });
+
+          $(document).ready(function(){
+            $('.q1').click(function(){
+              $('.qq1').slideToggle(300);      
+              return false;
+            });
+          });
+
+            $(document).ready(function(){
+              $('.q').click(function(){
+                $('.qq').slideToggle(300);      
+                return false;
+              });
+            });
+
+              $(document).ready(function(){
+                $('.q2').click(function(){
+                  $('.qq2').slideToggle(300);      
+                  return false;
+                });
+              });
+
+                $(document).ready(function(){
+                  $('.q3').click(function(){
+                    $('.qq3').slideToggle(300);      
+                    return false;
+                  });
+                });
+
+                $(document).ready(function(){
+                  $('.q4').click(function(){
+                    $('.qq4').slideToggle(300);      
+                    return false;
+                  });
+                });
+
+                $(document).ready(function(){
+                  $('.q5').click(function(){
+                    $('.qq5').slideToggle(300);      
+                    return false;
+                  });
+                });
+
+                $(document).ready(function(){
+                  $('.q6').click(function(){
+                    $('.qq6').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q7').click(function(){
+                    $('.qq7').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q8').click(function(){
+                    $('.qq8').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q9').click(function(){
+                    $('.qq9').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q10').click(function(){
+                    $('.qq10').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q11').click(function(){
+                    $('.qq11').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q12').click(function(){
+                    $('.qq12').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q13').click(function(){
+                    $('.qq13').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q14').click(function(){
+                    $('.qq14').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q15').click(function(){
+                    $('.qq15').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q16').click(function(){
+                    $('.qq16').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q17').click(function(){
+                    $('.qq17').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q18').click(function(){
+                    $('.qq18').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q19').click(function(){
+                    $('.qq19').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q20').click(function(){
+                    $('.qq20').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q21').click(function(){
+                    $('.qq21').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q22').click(function(){
+                    $('.qq22').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q23').click(function(){
+                    $('.qq23').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q24').click(function(){
+                    $('.qq24').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q25').click(function(){
+                    $('.qq25').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q26').click(function(){
+                    $('.qq26').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q27').click(function(){
+                    $('.qq27').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q28').click(function(){
+                    $('.qq28').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q29').click(function(){
+                    $('.qq29').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q30').click(function(){
+                    $('.qq30').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q31').click(function(){
+                    $('.qq31').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q32').click(function(){
+                    $('.qq32').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q33').click(function(){
+                    $('.qq33').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q34').click(function(){
+                    $('.qq34').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q35').click(function(){
+                    $('.qq35').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q36').click(function(){
+                    $('.qq36').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q37').click(function(){
+                    $('.qq37').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q38').click(function(){
+                    $('.qq38').slideToggle(300);      
+                    return false;
+                  });
+                });
+                $(document).ready(function(){
+                  $('.q39').click(function(){
+                    $('.qq39').slideToggle(300);      
+                    return false;
+                  });
+                });$(document).ready(function(){
+                  $('.q40').click(function(){
+                    $('.qq40').slideToggle(300);      
+                    return false;
+                  });
+                });
+                </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.layer {
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    width: 500px; /* Ширина блока */
+    height: 500px; /* Высота блока */
+    padding: 5px; /* Поля вокруг текста */
+    border: solid 1px black; /* Параметры рамки */
+    margin: 5%;
+    text-align: center;
+   } 
+   .bberx{
+       font-size: 20px;
+       text-align: center;
+       padding: 5%;
+       background: rgb(135, 207, 255);
+   }
+   /* Стиль окна поиска */
+img{
+    width: 20%;
+    padding: 5%;
+}
